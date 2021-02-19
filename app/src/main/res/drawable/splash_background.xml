@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+
+   <!-- <item n:drawable="@color/white"
+        xmlns:n="http://schemas.android.com/apk/res/android" />
+-->
+    <item n2:top="@dimen/_100sdp"
+        xmlns:n2="http://schemas.android.com/apk/res/android">
+        <bitmap n2:gravity="center" n2:src="@drawable/careconnect" />
+    </item>
+   <!-- <item n3:bottom="@dimen/_90sdp"
+        xmlns:n3="http://schemas.android.com/apk/res/android">
+        <bitmap n3:gravity="bottom"
+            n3:drawable="@color/white"
+            />
+
+    </item>
+-->
+</layer-list>
