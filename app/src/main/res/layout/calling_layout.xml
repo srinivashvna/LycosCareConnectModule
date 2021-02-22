@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/careconnect"
+        android:layout_centerInParent="true"/>
+
+    <com.care.connect.utils.CustomFontRegular
+        android:id="@+id/tv_calling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calling..."
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/iv_image"/>
+    <com.care.connect.utils.CustomFontRegular
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_20sdp"
+        android:text="Christian"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:textStyle="bold"/>
+
+    <com.care.connect.utils.CustomFontRegular
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_20sdp"
+        android:layout_alignParentRight="true"
+        android:text="5:00PM"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:textStyle="bold"/>
+
+
+    <com.care.connect.utils.CustomFontRegular
+        android:id="@+id/tv_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_20sdp"
+        android:layout_alignParentBottom="true"
+        android:text="00:02:15"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+
+    <com.care.connect.utils.CustomFontRegular
+        android:id="@+id/tv_endcall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_red_corner5"
+        android:text="END CALL"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:paddingTop="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_12sdp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+
+
+
+
+</RelativeLayout>

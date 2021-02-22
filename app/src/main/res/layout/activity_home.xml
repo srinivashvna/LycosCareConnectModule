@@ -1,6 +1,189 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#000000">
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_toLeftOf="@+id/rc_right"
+            android:layout_toRightOf="@+id/rc_left"
+            android:background="@drawable/bg_white_corner5"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <com.care.connect.utils.CustomFontRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_selected_cat"
+                android:gravity="center"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="Reminders"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp" />
+
+            <com.care.connect.utils.CustomFontRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:gravity="left"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="Christian (Son) \nDOCTORS APPONTMENT AT 6PM on 18th March "
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.care.connect.utils.CustomFontRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:gravity="left"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="Kalyan (Son) \nBooked FLight tickets for Family to Hyderabad for 15th April"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:overScrollMode="never" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:overScrollMode="never" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toLeftOf="@+id/rc_right"
+            android:layout_toRightOf="@+id/rc_left"
+             android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rotation="0"
+                android:background="@null"
+                android:text="Missed Call"
+                android:textColor="@color/white"
+                android:drawableTop="@android:drawable/sym_call_incoming"/>
+
+            <com.care.connect.utils.CustomFontRegular
+                android:id="@+id/tv_selected_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_selected_cat"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_40sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingRight="@dimen/_40sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:text="Family"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <!-- Bottom Bar -->
+    <LinearLayout
+        android:id="@+id/ll_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#3e3e3e"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_80sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_80sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/bt_family"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bt_gradient_family"
+            android:text="Family"
+            android:textColor="@color/bottom_menu_blue_text"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_gradient_friends"
+            android:text="Friends"
+            android:textColor="@color/bottom_menu_blue_text"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_utilities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_gradient_utilities"
+            android:text="Utilities"
+            android:textColor="@color/bottom_menu_blue_text"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@color/colorAccent"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/bottom_nav_menu" />
+    <!--    app:menu="@menu/bottom_navigation_main"-->
 </RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_130sdp"
+    android:layout_height="@dimen/contact_image_size"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:id="@+id/ll_top"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/ll_names"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/iv_contact_image"
+        android:background="@color/white"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:orientation="vertical">
+    <com.care.connect.utils.CustomFontRegular
+        android:id="@+id/tv_ContactName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/contact_name_size"
+        android:text="Anil kumar"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+
+    <com.care.connect.utils.CustomFontRegular
+        android:id="@+id/tv_ContactName_relation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/contact_name_rel_size"
+        android:text="Son"
+        android:textColor="@color/black"/>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_contact_image"
+        android:layout_width="@dimen/contact_image_size"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_height="@dimen/contact_image_size"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_launcher_background"/>
+
+</RelativeLayout>
